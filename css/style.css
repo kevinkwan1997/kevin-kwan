@@ -61,6 +61,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -395,6 +396,10 @@ li {
 }
 
 /* Contact section */
+
+.contact {
+  height: 600px;
+}
 
 .form-container {
   display: flex;
