@@ -62,6 +62,7 @@
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100vh;
 }
 
 body{
@@ -269,6 +270,10 @@ img{
 .home-greeting{
     display: block;
     font-weight: var(--font-bolt);
+}
+
+#developer-red {
+  color: red;
 }
 
 /* Skills section */
