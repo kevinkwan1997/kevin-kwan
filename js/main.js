@@ -34,6 +34,9 @@ projects.forEach((project) => {
     })
 })
 
+//Nav link to section
+
+
 
 
 
