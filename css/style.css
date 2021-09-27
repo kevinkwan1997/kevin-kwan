@@ -144,7 +144,7 @@ img{
 .l-header{
   width: 100%;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
   background-color: #000;
@@ -511,6 +511,10 @@ li {
 
 /* Desktop */
 @media only screen and (min-width: 1150px)  {
+  .l-header{
+    top: 0;
+    bottom: auto;
+  }
 
   .home-greeting {
     font-size: 50px;
