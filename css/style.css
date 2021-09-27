@@ -61,8 +61,8 @@
 
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
-  max-width: 100vh;
+  overflow-x: hidden; 
+  overflow-y: auto;
 }
 
 body{
@@ -73,6 +73,9 @@ body{
   background-color: var(--first-color-lighten);
   color: var(--text-color);
   line-height: 2.5rem;
+  height: 100%;
+  overflow-x: hidden; 
+  overflow-y: hidden;
 
 }
 
@@ -154,21 +157,44 @@ img{
   align-items: center;
 }
 
+.nav-menu {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-@media screen and (max-width: 768px){
-  .nav-menu{
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding-top: 1.3rem;
-    text-align: center;
-    background-color: #000;
-    transition: 0.4s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 0 0 1rem 1rem;
+.nav-item {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0 !important;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
 
-  }
+.nav-text {
+  display: none;
+}
+svg {
+  height: 50%;
+  width: auto;
+}
+
+.nav-item:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.nav-item:hover .nav-text  {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.nav-item:active {
+  background-color: grey;
+  transition: 0.1s;
 }
 
 .button-light {
@@ -404,6 +430,7 @@ li {
 
 .contact {
   height: 600px;
+  margin-top: 50px;
 }
 
 .form-container {
@@ -428,6 +455,11 @@ li {
 
 /* Ipad */
 @media only screen and (min-width: 570px) {
+
+  .nav-item:hover .nav-text {
+    transition: 0.4s;
+    display: block;
+  }
   /*home container*/
   .home-container {
     grid-template-columns: 50% 50%;
