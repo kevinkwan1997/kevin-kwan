@@ -245,7 +245,7 @@ svg {
 .header {
   padding: 15px;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: normal;
   letter-spacing: 5px;
   border-bottom: 1px solid rgb(223, 52, 52);
@@ -370,11 +370,88 @@ li {
 .project {
   width: 100%;
   height: 200;
-  background-image: url('../images/project-ph.png');
   display : flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  background-blend-mode: multiply;
+  background-color: #5e5d5d;
 }
+
+
+#one {
+  background-image: url('/images/concurrent.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#two {
+  background-image: url('/images/larry.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#three {
+  background-image: url('/images/treatment.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#four {
+  background-image: url('/images/winnerscup.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#five {
+  background-image: url('/images/pwm.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.project-link {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-link:hover {
+  transition: 0.2s ease-out;
+  transform: scale(1.1);
+}
+
+.project-title {
+  position: absolute;
+}
+
+.github {
+  position: absolute;
+  opacity: 0;
+  color: rgb(221, 125, 125);
+}
+
+.project-link:hover .project-title {
+  opacity: 0;
+  transition: 0.2s ease-out;
+}
+
+.project-link:hover .github {
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+
+
 
 .active {
   transition: 0.3s ease-in-out;
@@ -422,8 +499,8 @@ li {
 }
 
 .tech-stack {
-  font-size: 10px;
-  color: rgb(0, 0, 0);
+  font-size: 12px;
+  color: rgb(221, 46, 46);
 }
 
 /* Contact section */
@@ -505,6 +582,10 @@ li {
     grid-auto-rows: minmax(200px, auto);
   }
 
+  .project {
+    font-size: 25px;
+  }
+
   /* form */ 
 
 }
@@ -529,6 +610,11 @@ li {
     font-size: 35px;
     margin-top: 20px;
   }
+
+    /* Project container */ 
+    .project {
+      font-size: 35px;
+    }
   
     /* Experience container */
 
