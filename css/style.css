@@ -431,10 +431,6 @@ li {
   transform: scale(1.1);
 }
 
-.project-title {
-  position: absolute;
-}
-
 .github {
   position: absolute;
   opacity: 0;
