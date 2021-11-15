@@ -315,6 +315,19 @@ svg {
 }
 
 
+.skills-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.stars {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .star {
   background: gold;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
@@ -346,7 +359,8 @@ svg {
 
 li {
   display: flex;  
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -383,34 +397,41 @@ li {
 
 
 #one {
-  background-image: url('/images/concurrent.jpg');
+  background-image: url('/images/flip.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #two {
-  background-image: url('/images/larry.jpg');
+  background-image: url('/images/concurrent.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #three {
-  background-image: url('/images/treatment.jpg');
+  background-image: url('/images/larry.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #four {
-  background-image: url('/images/winnerscup.jpg');
+  background-image: url('/images/treatment.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #five {
+  background-image: url('/images/winnerscup.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#six {
   background-image: url('/images/pwm.jpg');
   background-size: cover;
   background-position: center center;
@@ -567,7 +588,6 @@ li {
   .technical-experience-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
     grid-auto-rows: minmax(100px, auto);
   }
   
@@ -588,6 +608,25 @@ li {
 
 /* Desktop */
 @media only screen and (min-width: 1150px)  {
+
+  .spacer {
+    height: 50px;
+  }
+
+
+  #projects-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    grid-auto-rows: minmax(100px, auto);
+    height: 100%;
+  }
+
   .l-header{
     top: 0;
     bottom: auto;

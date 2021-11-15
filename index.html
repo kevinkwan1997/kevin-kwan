@@ -21,7 +21,7 @@
                 <span class="nav-text">Home</span>
               </div>
 
-              <div class="nav-item" onclick="location.href='#skills'">
+              <div class="nav-item" onclick="location.href='#skills-spacer'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
                   <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
                   <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
@@ -29,14 +29,14 @@
                 </svg>
               </div>
 
-              <div class="nav-item" onclick="location.href='#projects'">         
+              <div class="nav-item" onclick="location.href='#projects-spacer'">         
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
                   <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"/>
                 </svg>
                 <span class="nav-text">Projects</span>
               </div>
 
-              <div class="nav-item" onclick="location.href='#experiences'">
+              <div class="nav-item" onclick="location.href='#experiences-spacer'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-code" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"/>
                   <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
@@ -45,7 +45,7 @@
                 <span class="nav-text">Experiences</span>
               </div>
 
-              <div class="nav-item" onclick="location.href='#contact'">
+              <div class="nav-item" onclick="location.href='#contact-spacer'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
                   <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z"/>
                 </svg>
@@ -79,15 +79,19 @@
                 </div>
             </section>
 
+            <div class="spacer" id="skills-spacer">
+
+            </div>
+
             <!--===== SKILLS =====-->
             <section class="skills" id="skills">
               <h1 class="header">Skills</h2>
-              <div class="skills-container">
+              <div class="skills-container" id="skills-co">
 
                 <div class="skills-list">
                   <h2 class="subheader"> Tech Stack </h2>
                   <ul id="skill-ul">
-                    <li>Java / Spring Boot
+                    <li> <span class="skills-title  ">Java / Spring Boot</span> 
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -95,21 +99,13 @@
                         <span class="star"></span>
                       </div> 
                     </li>
-                    <li>PostgreSQL
+                    <li> <span class="skills-title">PostgreSQL</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
                       </div> 
                     </li>
-                    <li>HTML
-                      <div class="stars">
-                        <span class="star"></span>
-                        <span class="star"></span>
-                        <span class="star"></span>
-                        <span class="star"></span>
-                      </div> 
-                    </li>
-                    <li>CSS
+                    <li> <span class="skills-title">HTML</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -117,21 +113,29 @@
                         <span class="star"></span>
                       </div> 
                     </li>
-                    <li>JavaScript
+                    <li> <span class="skills-title">CSS</span>
+                      <div class="stars">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                      </div> 
+                    </li>
+                    <li> <span class="skills-title">JavaScript</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
                         <span class="star"></span>
                       </div> 
                     </li>
-                    <li>Vue.js
+                    <li> <span class="skills-title">Vue.js</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
                         <span class="star"></span>
                       </div> 
                     </li>
-                    <li>React.js
+                    <li> <span class="skills-title">React.js</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -140,11 +144,11 @@
                   </ul>
                 </div>
               
-                <div class="soft-skills">
+                <div class="skills-list">
                   
                 <h2 class="subheader">Soft Skills</h2>
                   <ul id="soft-skills-ul">
-                    <li>Attention to detail
+                    <li> <span class="skills-title">Attention to detail</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -153,7 +157,7 @@
                         <span class="star"></span>
                       </div>  
                     </li>
-                    <li>Creativity
+                    <li> <span class="skills-title">Creativity</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -162,8 +166,8 @@
                         <span class="star"></span>
                       </div>  
                     </li>
-                    <li>Teamwork
-                      <div class="stars">
+                    <li><span class="skills-title">Teamwork</span>
+                      <div class="stars"> 
                         <span class="star"></span>
                         <span class="star"></span>
                         <span class="star"></span>
@@ -171,8 +175,8 @@
                         <span class="star"></span>
                       </div>  
                     </li>
-                    <li>Problem Solving
-                      <div class="stars">
+                    <li><span class="skills-title">Problem Solving</span>
+                      <div class="stars"> 
                         <span class="star"></span>
                         <span class="star"></span>
                         <span class="star"></span>
@@ -180,8 +184,8 @@
                         <span class="star"></span>
                       </div>  
                     </li>
-                    <li>Communication
-                      <div class="stars">
+                    <li><span class="skills-title">Communication</span>
+                      <div class="stars"> 
                         <span class="star"></span>
                         <span class="star"></span>
                         <span class="star"></span>
@@ -189,8 +193,8 @@
                         <span class="star"></span>
                       </div>  
                     </li>
-                    <li>Accountability
-                      <div class="stars">
+                    <li><span class="skills-title">Accountability</span>
+                      <div class="stars"> 
                         <span class="star"></span>
                         <span class="star"></span>
                         <span class="star"></span>
@@ -201,10 +205,10 @@
                   </ul>
                 </div>
 
-                <div class="languages">
+                <div class="skills-list">
                   <h2 class="subheader">Languages</h2>
                   <ul id="languages-ul">
-                    <li>English (Daily use)
+                    <li><span class="skills-title">English (Daily use) </span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -213,7 +217,7 @@
                         <span class="star"></span>
                       </div>   
                     </li>
-                    <li>Korean (Native tongue) 
+                    <li>  <span class="skills-title">Korean (Native tongue)</span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -221,7 +225,7 @@
                         <span class="star"></span>
                       </div> 
                     </li>
-                    <li>Spanish (Survivable) 
+                    <li> <span class="skills-title">Spanish (Survivable) </span>
                       <div class="stars">
                         <span class="star"></span>
                         <span class="star"></span>
@@ -230,7 +234,7 @@
                   </ul>
                 </div>
 
-                <div class="tools">
+                <div class="skills-list">
                   <h2 class="subheader">Tools</h2>
                   <ul id="tools-ul">
                     <li>Git</li>
@@ -246,37 +250,41 @@
               
             </section>
 
+            <div class="spacer" id="projects-spacer">
+
+            </div>
+
             <!--===== PROJECTS =====-->
             <section class="projects" id="projects">
               <h1 data-aos="fade-up" class="header">Projects</h1>
               <div id="projects-grid-container">
-                <div data-aos="fade-right" data-aos-offset="0" class="project" id= "one">
+                <div data-aos="fade-right" data-aos-offset="0" class="project" id="one">
+                  <a href="https://github.com/kevinkwan1997/Flip" class="project-link">
+                    <span class="project-title">Flip</span>
+                    <span class="github">github</span>
+                  </a>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="0" class="project" id= "two">
                   <a href="https://github.com/kevinkwan1997/InfoHub" class="project-link">
                     <span class="project-title">Concurrent</span>
                     <span class="github">github</span>
                   </a>
                 </div>
-                <div data-aos="fade-right" data-aos-offset="0" class="project" id="two">
+                <div data-aos="fade-right" data-aos-offset="0" class="project" id="three">
                   <a href="https://github.com/kevinkwan1997/Larry" class="project-link">
                     <span class="project-title">Larry</span>
                     <span class="github">github</span>
                   </a>
                 </div>
-                <div data-aos="fade-right" data-aos-offset="0" class="project" id="three">
+                <div data-aos="fade-right" data-aos-offset="0" class="project" id="four">
                   <a href="https://github.com/kevinkwan1997/Treatment" class="project-link">
                     <span class="project-title">Treatment</span>
                     <span class="github">github</span>
                   </a>
                 </div>
-                <div data-aos="fade-right" data-aos-offset="0" class="project" id="four">
+                <div data-aos="fade-right" data-aos-offset="0" class="project" id="five">
                   <a href="https://github.com/kevinkwan1997/WinnersCup" class="project-link">
                     <span class="project-title">Winner's Cup</span>
-                    <span class="github">github</span>
-                  </a>
-                </div>
-                <div data-aos="fade-right" data-aos-offset="0" class="project" id="five">
-                  <a href="https://github.com/kevinkwan1997/PWM" class="project-link">
-                    <span class="project-title">PWM</span>
                     <span class="github">github</span>
                   </a>
                 </div>
@@ -288,6 +296,10 @@
                 </div>
               </div>
             </section>
+
+            <div class="spacer" id="experiences-spacer">
+
+            </div>
 
 
             <!--===== EXPERIENCES =====-->
@@ -386,6 +398,10 @@
                 </ul>
               </div>
             </section>
+
+            <div class="spacer" id="contact-spacer">
+
+            </div>
             <!--===== CONTACTME =====-->
             <section data-aos="fade-up" class="contact" id="contact">
               <h1 class="header">Contact me</h1>
