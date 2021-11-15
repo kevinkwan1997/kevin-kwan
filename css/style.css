@@ -483,6 +483,7 @@ li {
 
 .education-title {
   color: rgb(211, 137, 53);
+  display: block;
 }
 
 .education-date {
