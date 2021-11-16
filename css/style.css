@@ -130,7 +130,6 @@ img{
 
 /* layuot */
 .bd-container{
-  max-width: 1024px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -248,7 +247,7 @@ svg {
   font-size: 25px;
   font-weight: normal;
   letter-spacing: 5px;
-  border-bottom: 1px solid rgb(223, 52, 52);
+  border-bottom: 1px solid rgb(218, 65, 65);
 }
 
 .subheader {
@@ -277,15 +276,29 @@ svg {
 }
 
 .home-data{
-    border-left: 4px solid var(--first-color-lighten);
     color: black;
+    font-weight: lighter;
     padding-left: 1.5rem;
     z-index: var(--z-tooltip);
+    height: 100%;
+    width: 100%;
+}
+
+.home-profession {
+  color: white;
 }
 
 #home-picture {
-  border-radius: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-pic {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
 }
 
 .home-name{
@@ -299,19 +312,31 @@ svg {
 }
 
 #developer-red {
-  color: red;
+  color: rgb(218, 65, 65);
+  font-weight: bold;  
 }
 
 /* Skills section */
+
+.skills-container {
+  padding: 10px;
+  margin-bottom: 15px;
+}
 
 .skills {
   height: auto;
   width: auto;
 }
 
-#skills-list {
+.skills-list {
+  padding: 10px;
   height: auto;
   width: auto;
+  border-radius: 10px;
+  box-shadow:0 1px 2px rgba(0,0,0,0.07), 
+  0 2px 4px rgba(0,0,0,0.07), 
+  0 4px 8px rgba(0,0,0,0.07), 
+  0 8px 16px rgba(0,0,0,0.07);
 }
 
 
@@ -393,6 +418,11 @@ li {
   letter-spacing: 5px;
   background-blend-mode: multiply;
   background-color: #5e5d5d;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+  0 2px 4px rgba(0,0,0,0.07), 
+  0 4px 8px rgba(0,0,0,0.07), 
+  0 8px 16px rgba(0,0,0,0.07);
+  border-radius: 5px;
 }
 
 
@@ -455,7 +485,7 @@ li {
 .github {
   position: absolute;
   opacity: 0;
-  color: rgb(221, 125, 125);
+  color: rgb(218, 65, 65);
 }
 
 .project-link:hover .project-title {
@@ -477,12 +507,14 @@ li {
 
 /* Experiences section*/
 
-.experiences-container {
-  background-color: beige;
+#experiences-container {
+  padding: 25px;
 }
 
+
+
 .education-title {
-  color: rgb(211, 137, 53);
+  color: rgb(218, 65, 65);
   display: block;
 }
 
@@ -510,6 +542,8 @@ li {
 
 .job-desc li {
   font-size: 12px;
+  width: 100%;
+  text-align: start;
 }
 
 .experience-desc {
@@ -518,20 +552,38 @@ li {
 
 .tech-stack {
   font-size: 12px;
-  color: rgb(221, 46, 46);
+  color: rgb(218, 65, 65);
+}
+
+.technical-experience-wrapper {
+  padding: 25px;
+}
+
+.technical-experience {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+  0 2px 4px rgba(0,0,0,0.07), 
+  0 4px 8px rgba(0,0,0,0.07), 
+  0 8px 16px rgba(0,0,0,0.07);
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 /* Contact section */
 
-.contact {
-  height: 600px;
-  margin-top: 50px;
-}
 
 .form-container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 50%;
+  margin-top: 50px;
 }
+
+#contact {  
+  margin-bottom: 100px;
+  height: 100vh;
+
+} 
 
 #contact-form {
   display: flex;
@@ -557,25 +609,39 @@ li {
   }
   /*home container*/
   .home-container {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
 
   .home-data {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 20px;
   }
   li {
     width: 100%;
     justify-content: space-between;
   }
 
+  .home-greeting {
+    font-size: 30px;
+  }
+
+  .home-name {
+    font-size: 30px;
+  }
+
+  .home-profession {
+    font-size: 30px;
+  }
+
   /* skills container */
 
   .skills-container {
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 25px;
     grid-auto-rows: minmax(100px, auto);
   }
 
@@ -611,6 +677,51 @@ li {
 /* Desktop */
 @media only screen and (min-width: 1150px)  {
 
+  /* home container */
+
+
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-container {
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+  }
+
+  #home-picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    width: 100%;
+  }
+  li {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .home-greeting {
+    font-size: 300%;
+  }
+
+  .home-name {
+    font-size: 300%;
+    width: 100%;  
+  }
+
+  .home-profession {
+    font-size: 35px;
+  }
+
   .spacer {
     height: 50px;
   }
@@ -634,19 +745,6 @@ li {
     bottom: auto;
   }
 
-  .home-greeting {
-    font-size: 50px;
-  }
-
-  .home-name {
-    font-size: 75px;
-    margin-top: 20px;
-  }
-
-  .home-profession {
-    font-size: 35px;
-    margin-top: 20px;
-  }
 
     /* Project container */ 
     .project {
