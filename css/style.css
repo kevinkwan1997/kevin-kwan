@@ -952,5 +952,9 @@ li {
     height: auto;
     width: 100%;
   }
+
+  #submit-wrapper {
+    height: 500px;
+  }
 }
  
