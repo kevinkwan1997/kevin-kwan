@@ -680,6 +680,10 @@ li {
   margin-bottom: 2px;
 }
 
+#msg-area {
+  min-height: 4em;
+}
+
 
 /* Ipad */
 @media only screen and (min-width: 570px) {
@@ -762,9 +766,6 @@ li {
     justify-items: start;
   }
 
-  .form-element {
-    margin-bottom: 10px;
-  }
 }
 
 /* Desktop */
@@ -880,8 +881,9 @@ li {
 
   #msg-area {
     height: 50em;
-    width: 50em;
-    margin-bottom: 10px;
+    width: 50em;  
+    min-height: 10em;
+    max-width: 650px;
   }
 
   #form-submit {
@@ -904,10 +906,5 @@ li {
     height: 100%;
     width: 100%;
   }
-
-  .form-element {
-    margin-bottom: 10px;
-  }
-
 }
  
