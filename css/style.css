@@ -647,6 +647,7 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 95%;
   max-width: 450px;
   grid-area: form;
