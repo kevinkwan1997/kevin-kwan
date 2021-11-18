@@ -491,11 +491,14 @@
                 <form action=https://formspree.io/f/mayavazz method="POST" id="contact-form">
                   <input type="text" class="form-element" size="25" name="name" placeholder="Name" required><br>
                   <input type="email" class="form-element" size="25" name="_replyto" placeholder="E-mail" required><br>
-                  <textarea name="message" placeholder="Message" cols="30" rows="4" name="_subject" id="msg-area" form="contact-form" required></textarea>
-                  <button id="form-submit" type="submit" name="send-email" id="send-btn"> Send </button>
-                </form>
- 
+                  <textarea name="message" placeholder="Message" rows="4" name="_subject" id="msg-area" form="contact-form" required></textarea>
+
+                </form> 
               </div>
+              <div id="submit-wrapper">
+                <button id="form-submit" form="contact-form" type="submit" name="send-email" id="send-btn" style="margin-top: 50px; max-width: 450px; height: 45px" > Send </button>
+              </div>
+            
             </section>
 
         </main>

@@ -601,14 +601,15 @@ li {
   filter: sepia(25%);
   height: 225px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
     "head head head stamp"
-    "form form form blank"
+    "form form form to"
     "form form form to";
   gap: 1px;
   padding: 4px;
-  justify-items: center;
+  justify-content: center;
+  align-items: end;
 }
 
 #contact {  
@@ -636,26 +637,36 @@ li {
 } 
 
 #contact h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   color: black;
   border-bottom: none;
+  font-size: var(--normal-font-size);
   grid-area: head;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
+  line-height: 12px;
 }
 
 #contact-form {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   width: 95%;
-  max-width: 450px;
   grid-area: form;
 }
 
+.form-element {
+  width: 100%;
+}
+
+.form-element:first-child {
+  transform: translateY(10px);
+}
+
 #stamp {
-  width: 40px;
-  height: auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
   grid-area: stamp;
 }
 
@@ -675,6 +686,8 @@ li {
   grid-area: to;
   font-family: 'Prata', serif;
   line-height: 12px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .form-element {
@@ -683,7 +696,15 @@ li {
 
 #msg-area {
   min-height: 4em;
+  width: 100%;
 }
+
+#submit-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 
 
 /* Ipad */
@@ -762,9 +783,21 @@ li {
     height: 300px;
   }
 
+  #contact h1 {
+    font-size: var(--mb-4);
+    width: 100%;
+  }
+
   .form-container {
     height: 275px;
     justify-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "head head blank blank stamp"
+      "blank2 blank2 blank2 blank2 stamp"
+      "form form form blank3 to"
+      "form form form blank3 to";
   }
 
 }
@@ -856,6 +889,7 @@ li {
 
   #contact h1 {
     font-size: 75px;
+    line-height: 60px;
     font-family: 'Quicksand', sans-serif;
     font-weight: lighter;
   }
@@ -870,25 +904,25 @@ li {
     grid-template-areas: 
       "head head blank2 blank2 stamp"
       "blank blank blank blank blank"
-      "form form form form to"
+      "form form form form blank3"
       "form form form form to"
       "form form form form to"
       ;
   }
 
   .form-element {
-    width: auto;
+    width: 75%;
   }
 
   #msg-area {
     height: 50em;
-    width: auto;
-    min-height: 10em;
-    max-width: 650px;
+    width: 75%;
+    min-height: 8em;
+    max-height: 8em;
   }
 
   #form-submit {
-    width: auto;
+    width: 100%;
   }
 
   #stamp {
@@ -904,7 +938,7 @@ li {
   }
 
   #contact-form {
-    height: 100%;
+    height: auto;
     width: 100%;
   }
 }
