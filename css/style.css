@@ -599,7 +599,6 @@ li {
   display: grid;
   background: url("/images/ricepaper.jpg");
   filter: sepia(25%);
-  height: 225px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
@@ -614,27 +613,31 @@ li {
 
 #contact {  
   transform: rotate(0.5deg);
-  background-image: 
-    repeating-linear-gradient(
-      -45deg,
-      antiquewhite 0px,
-      antiquewhite 15px,
-      #3498db 15px, 
-      #3498db 30px,
-      antiquewhite 30px,
-      antiquewhite 45px,
-      #e74c3c 45px,
-      #e74c3c 60px
-    );
   margin-bottom: 100px;
-  height: 250px;
   width: 100%;
-  max-height: 600px;
   background-color: #E2C3A0;
   border-radius: 5px;
-  padding: 15px;
-  display: grid;
+      position: relative;
+    padding-bottom: 25%;
+  height: 0;
 } 
+
+#contact-wrapper {
+  background-image: 
+  repeating-linear-gradient(
+    -45deg,
+    antiquewhite 0px,
+    antiquewhite 15px,
+    #3498db 15px, 
+    #3498db 30px,
+    antiquewhite 30px,
+    antiquewhite 45px,
+    #e74c3c 45px,
+    #e74c3c 60px
+  );
+  padding: 5px;
+  height: auto;
+}
 
 #contact h1 {
   display: flex;
@@ -701,8 +704,19 @@ li {
 
 #submit-wrapper {
   display: flex;
-  width: 100%;
+  height: 250px;
+  position: relative;
   justify-content: center;
+  align-items: center;
+}
+
+#form-submit {
+  width: 100%;
+}
+
+/* footer */
+.footer {
+  height: auto;
 }
 
 
@@ -779,9 +793,6 @@ li {
 
   /* form */ 
 
-  #contact {
-    height: 300px;
-  }
 
   #contact h1 {
     font-size: var(--mb-4);
@@ -882,10 +893,6 @@ li {
     /* Experience container */
 
     /* Contact container */ 
-
-  #contact {
-    height: 600px;
-  }
 
   #contact h1 {
     font-size: 75px;
