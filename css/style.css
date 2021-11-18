@@ -877,18 +877,18 @@ li {
   }
 
   .form-element {
-    width: 650px;
+    width: auto;
   }
 
   #msg-area {
     height: 50em;
-    width: 50em;  
+    width: auto;
     min-height: 10em;
     max-width: 650px;
   }
 
   #form-submit {
-    width: 650px;
+    width: auto;
   }
 
   #stamp {
