@@ -708,14 +708,14 @@ li {
 
 #submit-wrapper {
   display: flex;
-  height: 250px;
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-top: 250px;
 }
 
 #form-submit {
-  width: 100%;
+  width: auto;
   border-radius: 5px;
   border: 1px solid rgb(216, 66, 66);
   color: rgb(216, 66, 66);
