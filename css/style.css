@@ -746,7 +746,6 @@ li {
 
 /* footer */
 .footer {
-  height: auto;
   padding: 25px;
   z-index: var(--z-fixed);
   box-shadow:0 1px 2px rgba(0,0,0,0.07), 
@@ -754,10 +753,11 @@ li {
   0 4px 8px rgba(0,0,0,0.07), 
   0 8px 16px rgba(0,0,0,0.07);
   margin: 10px;
-  background-color:rgb(231, 231, 231);
+  background-color:rgb(233, 233, 233);
   padding-top: 50px;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
+  height: 500px;
 }
 
 
@@ -766,7 +766,7 @@ li {
 @media only screen and (min-width: 570px) {
 
   #contact-form {
-    width: 50%;
+    width: 40%;
   }
 
   .nav-item:hover .nav-text {
@@ -887,6 +887,7 @@ li {
     justify-content: center;
     margin-right: 20px;
     width: 100%;
+    line-height: 65px;
   }
   li {
     width: 100%;
@@ -894,7 +895,7 @@ li {
   }
 
   .home-greeting {
-    font-size: 300%;
+    font-size: 65px;
   }
 
   .home-name {
