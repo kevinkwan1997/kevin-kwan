@@ -760,6 +760,13 @@ li {
   height: 500px;
 }
 
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 
 /* Ipad */
